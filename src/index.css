@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+li .active {
+    color: blue !important;
+    border-bottom: 2px solid blue;
+}
+
+.pic {
+    width: 100%;
+    height: 75vh
+}
+
+.head_service {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.coffee {
+    width: 100%;
+    height: 81vh
+}
+
+
+.sub_content {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+h1.Heading {
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
+span.brand_name {
+    color: cornflowerblue;
+    text-transform: capitalize;
+    letter-spacing: none;
+}
+
+.card {
+    width: 100% !important;
+}
+
+
+
+@media (max-width:1200px) {
+    h1.Heading {
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:991px) {
+    h1.Heading {
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+    }
+
+    h1.main_heading {
+        margin-right: 2rem;
+    }
+
+    .sub_content {
+        font-size: 1rem;
+    }
+
+    li .active {
+        color: blue !important;
+        border:none
+    }
+}
+
+@media (max-width:768px) {
+    span.main_heading {
+        display: block;
+    }
+
+}
+
+@media (min-width:768px) {
+    .picture {
+        position: relative;
+        animation: myfirst 2s linear 5s infinite alternate;
+    }
+
+    @keyframes myfirst {
+        0% {
+            top: -15px;
+        }
+
+        100% {
+            top: 25px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+            justify-content: flex-end;
+        }
+    }
+}
